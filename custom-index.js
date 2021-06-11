@@ -50,4 +50,22 @@ jQuery( document ).ready( function( $ ) {
     }});    
     $('.ServicesBalanceCol').height(highestBox1);
     $('.ServicesWrap .Desc').height(highestBox2);
+
+    // ajax to populate REST API data
+    $.ajax({
+        url:'https://jsonplaceholder.typicode.com/photos',
+        type:'get',
+        dataType:'json',
+
+        success:function(response){
+        for(var i=0; i<=response.length; i++) {//response.length
+            var photogallery = "<div class='col-sm-3 Col3'><a href='#'><div class='Image'><img src='"+response[i].url+"' alt=''/></div><h6>"+response[i].title+"</h6></a></div>"
+            $('#PhotoGallery').append(photogallery)
+        }
+        },
+        error:function(error){
+            console.log(error)
+        },
+        always:function(){}
+    })
 });
