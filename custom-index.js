@@ -37,4 +37,17 @@ jQuery( document ).ready( function( $ ) {
         else 
         jQuery(".TopMenu").removeClass('StickyMenu');
     });
+
+    // balance height
+    var highestBox1, highestBox2 = 0;
+    $('.ServicesBalanceCol').each(function(){  
+            if($(this).height() > highestBox1){  
+            highestBox1 = $(this).height();  
+    }});
+    $('.ServicesWrap .Desc').each(function(){  
+            if($(this).height() > highestBox2){  
+            highestBox2 = $(this).height();  
+    }});    
+    $('.ServicesBalanceCol').height(highestBox1);
+    $('.ServicesWrap .Desc').height(highestBox2);
 });
