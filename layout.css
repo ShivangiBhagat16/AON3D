@@ -64,6 +64,54 @@ ul {
 }
 .TopRight #navigation {
     float: right;
+}.FooterWrap {
+    background: url('images/footer-bg.png') no-repeat top center #121212;
+    background-size: cover;
+    min-height: 400px;
+    color: #fff;
+}
+.FooterNav {
+    padding: 60px 0 80px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.FooterNav .List {
+    margin-bottom: 40px;;
+}
+.FooterNav h6 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.FooterWrap li {
+    margin-bottom: 12px;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.FooterWrap li a {
+    color: #fff;
+}
+.FooterWrap li a:hover {
+    color: #1950ff;
+}
+.FooterBottom {
+    padding: 15px 0;
+}
+.TermsAndConditions {
+    text-align: right;
+}
+.copyright {
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+.TermsAndConditions li {
+    margin: 0;
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.TermsAndConditions li:last-child {
+    padding-right: 0;
 }
 .TopArrow {
     text-align: center;
@@ -89,6 +137,9 @@ ul {
 }
 .TopArrow .fa-stack-2x {
     font-size: 34px;
+}
+.ResponsiveMenu {
+	display: none;
 }
 
 /* CSS Document */
@@ -440,9 +491,7 @@ a.menu-link {
 	font-size:13px;
 }
 }
-.ResponsiveMenu {
-	display: none;
-}
+
 
 
 
