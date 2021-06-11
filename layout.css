@@ -214,6 +214,39 @@ ul {
     margin-top: -80px;
 	padding-bottom: 35px;
 }
+.PhotoGallery {
+	padding: 60px 0;
+	color: #fff;
+	background-color: #444444;
+}
+.PhotoGallery .Image {
+	overflow: hidden;
+	margin-bottom: 15px;
+	background-color: #fff;
+}
+.PhotoGallery a:hover .Image {
+	-webkit-box-shadow: 0px 3px 6px 4px rgb(218 218 218 / 75%);
+    -moz-box-shadow: 0px 3px 6px 4px rgb(218 218 218 / 75%);
+    box-shadow: 0px 3px 6px 4px rgb(218 218 218 / 75%);
+}
+.PhotoGallery img {
+    max-width: 100%;
+	transition: all ease-in 0.3s;
+}
+.PhotoGallery a,.PhotoGallery a:hover {
+	color: #121212;
+}
+.PhotoGallery .Col3 {
+    margin-bottom: 25px;
+}
+.PhotoGallery a:hover img {
+	transform: scale(0.85);
+}
+.PhotoGallery .Col3 h6 {
+	font-weight: 600;
+	color: #fff;
+}
+
 .FooterWrap {
     background: url('images/footer-bg.png') no-repeat top center #121212;
     background-size: cover;
@@ -287,9 +320,6 @@ ul {
 }
 .TopArrow .fa-stack-2x {
     font-size: 34px;
-}
-.ResponsiveMenu {
-	display: none;
 }
 
 /* CSS Document */
@@ -420,6 +450,127 @@ html[xmlns] #navigation {
 }
 
 /**end**/
+
+@media only screen and (max-width: 1024px) {
+.ResponsiveMenu {
+	display: block !important;
+}
+.LeftNav, .TopRight #navigation {
+	display: none !important;
+}
+.TopMenu {
+    padding: 15px 0 8px;
+}
+.TopMenu .container {
+	max-width: 100% !important;
+}
+.TopMenu .row {
+	display: block !important;
+}
+.TopLeft {
+    float: left !important;
+    width: auto !important;
+}
+.TopRight {
+    padding: 0 !important ;
+}
+.container {
+	max-width: 94% !important;
+}
+.IdxHeaderWrap .carousel-control-next, .carousel-control-prev {
+	width: 40px !important;
+}
+.IdxHeaderWrap .carousel-fade .carousel-item {
+	min-height: 650px;
+}
+.TopArrow {
+	display: block !important;
+}
+}
+@media only screen and (max-width: 950px) {
+.Header h1 {
+	font-size: 50px;
+	line-height: 55px;
+}
+}
+@media only screen and (max-width: 800px) {
+.IdxHeaderWrap .carousel-fade .carousel-item {
+	min-height: 550px;
+}
+.IdxHeaderWrap .carousel-fade ol.carousel-indicators {
+    top: 30%;
+}
+}
+@media only screen and (max-width: 767px) {
+.ServicesWrap .Col3 .Desc {
+	height: inherit !important;
+}
+.FooterBottom .col-md-6 {
+	text-align: center;
+	margin:5px 0;
+	padding: 0;
+}
+.Header {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+}
+@media only screen and (max-width: 667px) {
+.IdxHeaderWrap .carousel-control-prev {
+	left: 22px;
+}
+.IdxHeaderWrap .carousel-control-next {
+	right: 22px;
+}
+.Header .container {
+	width: 85%;
+}
+.Header h1 {
+    font-size: 40px;
+    line-height: 45px;
+}
+}
+@media only screen and (max-width: 569px) {
+.IdxHeaderWrap .carousel-fade .carousel-item {
+	min-height: 500px;
+}
+.Header h1 {
+	font-size: 35px;
+	line-height: 42px;
+}
+}
+@media only screen and (max-width: 480px) {
+.IdxHeaderWrap .carousel-control-prev {
+	left: 0;
+	top: 15%;
+}
+.IdxHeaderWrap .carousel-control-next {
+	right: 0;
+	top: 15%;
+}
+}
+@media only screen and (max-width: 384px) {
+.FooterBottom .col-md-6 {
+	font-size: 13px;
+}
+.FooterNav {
+	padding: 60px 0 50px;
+}
+.Header h1 {
+    font-size: 30px;
+    line-height: 35px;
+}
+.Header .WelcomeText {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+}
+.ResponsiveMenu {
+	display: none;
+}
+
+
 
 
 
@@ -641,7 +792,6 @@ a.menu-link {
 	font-size:13px;
 }
 }
-
 
 
 
