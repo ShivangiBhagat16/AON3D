@@ -6,9 +6,67 @@
     
     <title>Web Design</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="layout.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="custom-index.js"></script>
+
 </head>
 <body>
 
+    <div class="TopMenu">
+        <div class="container">
+            <div class="row">
+                <div class="TopLeft col-md-6">
+                    <div class="Logo">
+                        <a href="index.html">AON3D</a>
+                    </div>
+        
+                    <div class="LeftNav">
+                        <ul id="navigation">
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                    </div>
+                </div> <!--TopLeft-->
+                
+                <div class="TopRight col-md-6">
+                    <div class="ResponsiveMenu">
+                        <a class="menu-link" href="#menu"><p></p><p></p><p></p></a>
+                                    
+                        <div id="menu" class="menu">
+                            <ul>
+                                <li><a href="index.html" class="on">Home</a></li>         
+                                <li><a href="#">Account</a>
+                                    <span class="has-submenu"><i class="fa fa-angle-double-down"></i></span>
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Profile</a></li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul>
+                                </li> 
+                            </ul>
+                        </div>
+                    </div> <!--ResponsiveMenu-->
+                    <ul id="navigation">
+                        <li>
+                            <a href="#">Account <i class="fa fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!--TopRight-->
+            </div>
+        </div>
+    </div> <!--TopMenu-->
+    
 </body>
 </html> 
