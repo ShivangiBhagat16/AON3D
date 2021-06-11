@@ -1,6 +1,7 @@
 # AON3D
 
 Used https://getbootstrap.com for responsiveness and slider.
+Used google fonts for better UI.
 Used jQuery to use ajax to populate data from REST API.
 Wrote jQuery for the fixed top menu.
 Wrote jQuery for the responsive menu.
